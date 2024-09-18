@@ -6,7 +6,7 @@ def catalog(request):
         "goods": [
         {'image': 'deps/images/goods/set of tea table and three chairs.jpg',
          'name': 'Чайный столик и три стула',
-         'description': 'Комплект из трёх стульев и дизайнерский столик для гостинной комнаты.',
+         'description': 'Комплект из трёх стульев и дизайнерский столик для гостиной комнаты.',
          'price': 150.00},
 
          {'image': 'deps/images/goods/set of tea table and two chairs.jpg',
@@ -60,8 +60,8 @@ def catalog(request):
          'price': 15.00},
 
          {'image': 'deps/images/goods/strange table.jpg',
-         'name': 'Прикроватный столик',
-         'description': 'Столик, довольно странный на вид, но подходит для размещения рядом с кроватью.',
+         'name': 'Прикроватный стол',
+         'description': 'Стол, довольно странный на вид, но подходит для размещения рядом с кроватью.',
          'price': 25.00},
         ]
     }
