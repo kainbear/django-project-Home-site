@@ -1,4 +1,3 @@
-from django.db.models import Q
 from django.contrib.postgres.search import SearchVector, SearchQuery, SearchRank
 from django.contrib.postgres.search import SearchHeadline
 from goods.models import Products
@@ -22,15 +21,15 @@ def q_search(query):
             "name",
             query,
             start_sel='<span style="background-color: yellow;>',
-            stop_sel='</span>',
+            stop_sel="</span>",
         ),
     )
     result = result.annotate(
         bodyline=SearchHeadline(
             "description",
             query,
-            start_sel='<span style=background-color: yellow;>',
-            stop_sel='</span>',
+            start_sel="<span style=background-color: yellow;>",
+            stop_sel="</span>",
         ),
     )
     return result
