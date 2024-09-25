@@ -44,10 +44,10 @@ INSTALLED_APPS = [
 
     "debug_toolbar",
 
-
     'main',
     'goods',
     'users',
+    'carts',
 ]
 
 MIDDLEWARE = [
