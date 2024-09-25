@@ -8,9 +8,9 @@ class User(AbstractUser):
     )
 
     class Meta:
-        db_table: str = 'user'
-        verbose_name = 'Пользователя'
-        verbose_name_plural = 'Пользователи'
+        db_table: str = "user"
+        verbose_name = "Пользователя"
+        verbose_name_plural = "Пользователи"
 
     def __str__(self) -> str:
-        return f'{self.username}'
+        return f"{self.username}"
